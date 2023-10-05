@@ -10,6 +10,9 @@ body {
   background: var(--WHITE, #ffffff);
 }
 
+img {
+  display: block;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -23,10 +26,19 @@ body {
   overflow: hidden;
 }
 .conteiner {
-  width: 1440px;
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 .header {
-  display: inline-flex;
+  border-bottom: 1px solid var(--CORNFLOWER, #e7e9fc);
+}
+.header-container {
+  display: flex;
+}
+.nav {
+  display: flex;
+  align-items: center;
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -36,6 +48,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--IRIS, #4d5ae5);
+  margin-right: 76px;
 }
 .logo-span {
   color: var(--NAVY-BLUE, #2e2f42);
@@ -56,14 +69,26 @@ body {
 .hover:focus {
   color: var(--OCEAN, #404bbf);
 }
+.menu {
+  display: flex;
+  gap: 40px;
+}
+.menu-link {
+  padding: 24px 0;
+}
 .address {
   font-style: normal;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--SLATE, #434455);
 }
+.address-list {
+  display: flex;
+  gap: 40px;
+}
 .section-order {
   background: var(--NAVY-BLUE, #2e2f42);
+  padding: 188px 0;
 }
 .section-order-h-one {
   font-size: 56px;
@@ -71,6 +96,18 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--WHITE, #ffffff);
+  max-width: 496px;
+}
+.section-strategy {
+  padding: 120px 0;
+}
+.section-strategy-list {
+  display: flex;
+  gap: 24px;
+}
+.section-strategy-item {
+  width: calc((100% - 72px) / 4);
+  margin-bottom: 8px;
 }
 .section-strategy-h-tree {
   font-weight: 500;
@@ -83,6 +120,9 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+.section-work {
+  padding-bottom: 120px;
+}
 .section-work-h-two {
   font-size: 36px;
   line-height: 1.11;
@@ -90,9 +130,22 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--NAVY-BLUE, #2e2f42);
+  margin-bottom: 72px;
+}
+.section-work-list {
+  display: flex;
+  gap: 24px;
+}
+.section-work-item {
+  width: calc((100% - 48px) / 3);
 }
 .section-team {
   background: var(--CLOUD, #f4f4fd);
+  padding: 120px 0;
+}
+.section-team-list {
+  display: flex;
+  gap: 24px;
 }
 .section-team-h-two {
   font-size: 36px;
@@ -101,9 +154,40 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--NAVY-BLUE, #2e2f42);
+  margin-bottom: 72px;
 }
 .section-team-li {
   background: var(--WHITE, #ffffff);
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+}
+.section-team-name {
+  padding: 32px 0px;
+}
+.section-team-name-h-thre {
+  text-align: center;
+  margin-bottom: 8px;
+}
+.section-team-name-p {
+  text-align: center;
+}
+.section-product {
+  padding: 96px 0 120px 0;
+}
+.section-product-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+.section-product-item {
+  width: calc((100% - 48px) / 3);
+}
+.product-conteiner {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  margin-bottom: 8px;
 }
 .product-header {
   font-weight: 500;
@@ -120,6 +204,11 @@ body {
 }
 .footer {
   background: var(--NAVY-BLUE, #2e2f42);
+  padding: 100px 0;
+}
+.footer-link {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .footer-span {
   color: var(--CLOUD, #f4f4fd);
@@ -128,6 +217,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--CLOUD, #f4f4fd);
+  max-width: 264px;
 }
 .button {
   font-family: inherit;
@@ -138,10 +228,16 @@ body {
   background: var(--IRIS, #4d5ae5);
   color: var(--WHITE, #ffffff);
   cursor: pointer;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
 }
 .button:hover,
 .button:focus {
   background: var(--OCEAN, #404bbf);
+  border: 1px solid transparent;
 }
 .button-product {
   font-family: inherit;
@@ -152,6 +248,15 @@ body {
   background: var(--CLOUD, #f4f4fd);
   color: var(--IRIS, #4d5ae5);
   cursor: pointer;
+  padding: 12px 24px;
+  border-radius: 4px;
+  border: 1px solid var(--CORNFLOWER, #e7e9fc);
+}
+.button-product-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
 }
 .button-product:hover,
 .button-product:focus {
