@@ -26,7 +26,7 @@ img {
   overflow: hidden;
 }
 .container {
-  width: 1128px;
+  width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -58,6 +58,8 @@ img {
 }
 .list {
   list-style: none;
+  margin: 0;
+  padding-left: 0;
 }
 .nav {
   font-weight: 500;
@@ -183,6 +185,10 @@ img {
 .section-product-item {
   flex-basis: calc((100% - 3 * 16px) / 3);
 }
+.section-product-item-caption {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+}
 .product-container {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
@@ -194,6 +200,7 @@ img {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
   color: var(--NAVY-BLUE, #2e2f42);
 }
 .product-category {
