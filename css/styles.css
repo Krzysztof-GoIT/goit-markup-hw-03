@@ -101,6 +101,7 @@ img {
   text-align: center;
   color: var(--WHITE, #ffffff);
   max-width: 496px;
+  margin: auto;
 }
 .section-strategy {
   padding: 120px 0;
@@ -243,6 +244,7 @@ img {
   height: 56px;
   border: none;
   border-radius: 4px;
+  margin: 48px auto 0;
 }
 .button:hover,
 .button:focus {
